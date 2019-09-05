@@ -1,0 +1,40 @@
+{
+  "name": "aeroterra-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gonzalezjonathanjesus/aeroterra-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gonzalezjonathanjesus/aeroterra-challenge/issues"
+  },
+  "homepage": "https://github.com/gonzalezjonathanjesus/aeroterra-challenge#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^4.2.0",
+    "image-webpack-loader": "^6.0.0",
+    "json-loader": "^0.5.7",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "mapbox-gl": "^1.3.1",
+    "uniqid": "^5.0.3"
+  },
+  "proxy": "http://localhost:5000"
+}

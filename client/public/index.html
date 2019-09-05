@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aeroterra web mapping challenge</title>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.0/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id='map'></div>
+  <form class="marker-data">
+      <div>
+          <label for="name">Nombre</label>
+          <input type="text" name="name" placeholder="Av. 9 de julio 524" id="name" />
+      </div>
+      <div>
+          <label for="adress">Dirección</label>
+          <input type="text" name="adress" placeholder="Av. 9 de julio 524" id="adress" />
+      </div>
+      <div>
+          <label for="category">Categoría</label>
+          <select name="category" class="form-control" id="category">
+              <option value="none" selected>Seleccionar</option>
+              <option value="comercial">Comercial</option>
+              <option value="residencial">Residencial</option>
+              <option value="Mixta">Mixta</option>
+          </select>
+      </div>
+      <div>
+          <label>Coordenadas</label>
+          <div>
+              <div>
+                  <label>Longitud</label>
+                  <input type="text" name="lng" placeholder="-58.3826487" id="lng"/>
+              </div>
+              <div>
+                  <label>Latitud</label>
+                  <input type="text" name="lat" placeholder="-34.6035689" id="lat"/>
+              </div>
+          </div>
+      </div>
+      <div>
+          <input type="submit" value="Agregar" />
+      </div>
+  </form>
+  <script src="./bundle.js"></script>
+</body>
+</html>
